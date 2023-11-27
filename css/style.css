@@ -1,0 +1,181 @@
+@font-face {
+	font-family: 'YsabeauSC'; 
+	src: url(../fonts/YsabeauSC-VariableFont_wght.ttf); 
+}
+* {
+    font-family: 'YsabeauSC';
+    text-decoration: none;
+    margin: 0;
+}
+/* scrollbar begin */
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+  body::-webkit-scrollbar-track {
+    background: #000;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  }
+/* scrollbar end */
+body {
+    height: auto;
+    background-color: #000;
+}
+header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+}
+.logo {
+    height: 100%;
+    width: 30%;
+    float: left;
+    background-color: #000;
+    text-align: center;
+}
+.logo h1 {
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 50px;
+}
+.menubar {
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    margin-left: 15%;
+}
+.menubar ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menubar li { float: left; }
+.menubar a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+.menubar a:after {
+    background-color: #4e5560;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.menubar a:hover:after,
+.menubar a:focus:after {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 800px;
+    background-color: #F5F5F5;
+}
+
+.carousel-item img {
+    filter: sepia(100%) saturate(100%) brightness(50%) hue-rotate(200deg);
+}
+
+#carousel_cinematography_title {
+    font-size: 1.5em;
+}
+
+#carousel_cinematography_info {
+    font-size: 1.05em;
+}
+
+.category {
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.cats {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    margin-left: -1%;
+}
+
+.cats h {
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    color: green;
+}
+
+.cats p {
+    text-decoration: none;
+    color:#000;
+    font-size: 1.05em;
+    margin-top: 10px;
+}
+
+.categoryTitle {
+    line-height: 50px;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+}
+.cinematographyBlock {
+    min-height: 200px;
+}
+.cinematography {
+    background-color: #000;
+}
+
+.cinematographTitle {
+    width: 100%;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    background-color: #000;
+    font-weight: 800;
+}
+
+.cinematographyElement {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: auto;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+}
+
+.cinematographyElement h {
+    font-size: 1.5em;
+    display: block;
+}
+
+.cinematographyElement p {
+    font-size: 1.05em;
+    margin-top: 15px;
+}
+
+.cinematographyElement img {
+    margin-top: 15px;
+    height: 700px;
+    width: 500px;
+    border: 10px double #fff;
+}
+
+.cinema_name {
+    font-size: 1.5em;
+}
+
+.checkboxFilmsSerials {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    color: #fff;
+}
